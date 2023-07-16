@@ -2,7 +2,6 @@
 \documentclass[12pt, a4paper, addpoints]{exam}
 \usepackage{xeCJK}
 
-\usepackage{fancyhdr}
 \usepackage{lastpage}
 
 \usepackage[
@@ -18,10 +17,18 @@ pdfsubject={小测试}]{hyperref}
 
 \usepackage{ulem}
 
-\pagestyle{fancy}
-\fancyhead[L]{小测试}
-\fancyhead[R]{班级：\qquad 姓名：\qquad\qquad}
-\fancyfoot[C]{第 \thepage 页 (共 \pageref{LastPage} 页)}
+% \usepackage{fancyhdr}
+% \pagestyle{fancy}
+% \fancyhead[L]{小测试}
+% \fancyhead[R]{班级：\qquad 姓名：\qquad\qquad}
+% \fancyfoot[C]{第 \thepage 页 (共 \pageref{LastPage} 页)}
+
+\pagestyle{headandfoot}
+\runningheadrule
+\firstpageheader{小测试}{}{姓名：\qquad\qquad}
+\runningheader{小测试}
+\firstpagefooter{}{第 \thepage 页 (共 \pageref{LastPage} 页)}{}
+\runningfooter{}{第 \thepage 页 (共 \pageref{LastPage} 页)}{}
 
 \pointformat{(\thepoints)}
 \pointname{分}
@@ -35,16 +42,16 @@ pdfsubject={小测试}]{hyperref}
 
 命题人：李沪纲
 
-(答题时间 3 分钟，共 5 题，满分 14 分)
+(答题时间 3 分钟，共 4 题，满分 12 分)
 
-于 2023/7/16 17:33:48 导出}}}
+于 2023/7/16 20:49:07 导出}}}
 \end{center}
 \vspace{5mm}
 
 \normalsize
 \vspace{5mm}
 
-\section{单选题 (本大题共 2 题，满分 4 分)}
+\section{单选题 (本大题共 1 题，满分 2 分)}
 \hspace{1.5cm}
 \begin{questions}
 \question[2] 测试
@@ -55,19 +62,6 @@ pdfsubject={小测试}]{hyperref}
 \choice C
 \choice D
 \end{oneparchoices}
-
-标准答案: C
-
-\question[2] 你好啊
-
-\begin{oneparchoices}
-\choice A
-\choice B
-\choice C
-\choice D
-\end{oneparchoices}
-
-标准答案: B
 
 \end{questions}
 
@@ -85,8 +79,6 @@ pdfsubject={小测试}]{hyperref}
 \choice 历史考试有\textit{30}分
 \end{checkboxes}
 
-标准答案: 地球是圆的,中华有上下五千年历史,史记里没有\textbf{郭子仪}传,历史考试有\textit{}分
-
 \end{questions}
 
 \hspace{5cm}
@@ -95,7 +87,6 @@ pdfsubject={小测试}]{hyperref}
 \hspace{1.5cm}
 \begin{questions}
 \question[2] 可怜无定河边骨，可怜无定河边骨，犹是\uline{\qquad\qquad\qquad\qquad}梦里人
-标准答案: 春闺
 
 \end{questions}
 
@@ -105,8 +96,8 @@ pdfsubject={小测试}]{hyperref}
 \hspace{1.5cm}
 \begin{questions}
 \question[5] 赏析“气蒸云梦泽，波撼岳阳城”一句
+
 \vspace{\stretch{1}}
-参考答案: 好
 
 \end{questions}
 
